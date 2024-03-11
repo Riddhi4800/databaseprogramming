@@ -129,8 +129,7 @@ CREATE TABLE Attendance (
 student_id INT,
 date DATE,
 status VARCHAR(20),
-FOREIGN KEY (student_id) REFERENCES Students(student_id)
-);
+FOREIGN KEY (student_id) REFERENCES Students(student_id));
 INSERT INTO Attendance (student_id, date, status) VALUES
 (1, '2024-03-01', 'Present'),
 (2, '2024-03-01', 'Present'),
