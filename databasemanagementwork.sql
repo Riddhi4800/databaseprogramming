@@ -141,7 +141,6 @@ INSERT INTO Attendance (student_id, date, status) VALUES
 (8, '2024-03-01', 'Present'),
 (9, '2024-03-01', 'Present'),
 (10, '2024-03-01', 'Present');
-
 DESC student;
 SELECT * FROM student;
 
