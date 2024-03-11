@@ -141,6 +141,44 @@ INSERT INTO Attendance (student_id, date, status) VALUES
 (8, '2024-03-01', 'Present'),
 (9, '2024-03-01', 'Present'),
 (10, '2024-03-01', 'Present');
+CREATE TABLE Exam (
+exam_id INT PRIMARY KEY AUTO_INCREMENT,
+class_id INT,
+subject_id INT,
+exam_date DATE,
+FOREIGN KEY (class_id) REFERENCES Class(class_id),
+ FOREIGN KEY (subject_id) REFERENCES Subject(subject_id)
+);
+INSERT INTO Exams(class_id, subject_id, exam_date) VALUES
+(1, 1, '2024-04-01'),
+(2, 2, '2024-04-02'),
+(3, 3, '2024-04-03'),
+(4, 4, '2024-04-04'),
+(5, 5, '2024-04-05'),
+(6, 6, '2024-04-06'),
+(7, 7, '2024-04-07'),
+(8, 8, '2024-04-08'),
+(9, 9, '2024-04-09'),
+(10, 10, '2024-04-10');
+CREATE TABLE UserAccount (
+user_id INT PRIMARY KEY AUTO_INCREMENT,
+username VARCHAR(50) UNIQUE,
+password VARCHAR(255), 
+role VARCHAR(20) NOT NULL 
+);
+
+INSERT INTO UserAccount (username, password, role) VALUES
+('admin', 'password', 'admin'),
+('teacher1', password', 'teacher'),
+('teacher2', 'password', 'teacher'),
+('student1', 'password', 'student'),
+('student2', 'password', 'student'),
+('student3', 'password', 'student'),
+('student4', 'password', 'student'),
+('student5', 'password', 'student'),
+('student6', 'password', 'student'),
+('student7', 'password', 'student');
+
 DESC student;
 SELECT * FROM student;
 
