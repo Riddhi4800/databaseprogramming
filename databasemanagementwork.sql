@@ -169,15 +169,15 @@ role VARCHAR(20) NOT NULL
 
 INSERT INTO UserAccount (username, password, role) VALUES
 ('admin', 'password', 'admin'),
-('teacher1', password', 'teacher'),
-('teacher2', 'password', 'teacher'),
-('student1', 'password', 'student'),
-('student2', 'password', 'student'),
-('student3', 'password', 'student'),
-('student4', 'password', 'student'),
-('student5', 'password', 'student'),
-('student6', 'password', 'student'),
-('student7', 'password', 'student');
+('Paul', password', 'teacher'),
+('Cathy', 'password', 'teacher'),
+('Moses', 'password', 'student'),
+('Ronald', 'password', 'student'),
+('Gerald', 'password', 'student'),
+('Rose', 'password', 'student'),
+('Catherine', 'password', 'student'),
+('Jean001', 'password', 'student'),
+('Mary027', 'password', 'student');
 
 DESC student;
 SELECT * FROM student;
